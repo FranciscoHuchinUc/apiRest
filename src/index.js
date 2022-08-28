@@ -7,7 +7,7 @@ const userRoute = require('./routes/user')
 
 // settings
 const app = express()
-const port = process.env.PORT || 5000
+const port = process.env.PORT
 
 // middlewares
 app.use(bodyParser.urlencoded({ extended: false }))

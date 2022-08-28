@@ -10,12 +10,12 @@ const app = express()
 const port = process.env.PORT || 5000
 
 // middlewares
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use('/api', userRoute)
 
 // routes
-app.get('/hola/', (req, res) => {
+app.get('/', (req, res) => {
   res.send(200, { menssage: 'Bienvenido a mi Api REST' })
 })
 
